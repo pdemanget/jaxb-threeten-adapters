@@ -1,7 +1,8 @@
 package com.migesok.jaxb.adapter.javatime;
 
-import java.time.Year;
 import javax.xml.bind.annotation.adapters.XmlAdapter;
+
+import org.threeten.bp.Year;
 
 /**
  * {@code XmlAdapter} mapping JSR-310 {@code Year} to ISO proleptic year number

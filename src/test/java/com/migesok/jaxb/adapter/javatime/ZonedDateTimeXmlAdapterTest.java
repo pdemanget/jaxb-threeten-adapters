@@ -1,6 +1,6 @@
 package com.migesok.jaxb.adapter.javatime;
 
-import java.time.ZonedDateTime;
+import org.threeten.bp.ZonedDateTime;
 
 public class ZonedDateTimeXmlAdapterTest extends AbstractToStringAdapterTest<ZonedDateTime, ZonedDateTimeXmlAdapter> {
     public ZonedDateTimeXmlAdapterTest() {

@@ -1,7 +1,7 @@
 package com.migesok.jaxb.adapter.javatime;
 
-import java.time.ZonedDateTime;
-import java.time.format.DateTimeFormatter;
+import org.threeten.bp.ZonedDateTime;
+import org.threeten.bp.format.DateTimeFormatter;
 
 /**
  * {@code XmlAdapter} mapping JSR-310 {@code ZonedDateTime} to ISO-8601 string
@@ -13,6 +13,6 @@ import java.time.format.DateTimeFormatter;
  */
 public class ZonedDateTimeXmlAdapter extends TemporalAccessorXmlAdapter<ZonedDateTime> {
     public ZonedDateTimeXmlAdapter() {
-        super(DateTimeFormatter.ISO_ZONED_DATE_TIME, ZonedDateTime::from);
+        super(DateTimeFormatter.ISO_ZONED_DATE_TIME, ZonedDateTime.FROM);
     }
 }

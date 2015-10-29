@@ -1,6 +1,6 @@
 package com.migesok.jaxb.adapter.javatime;
 
-import java.time.OffsetTime;
+import org.threeten.bp.OffsetTime;
 
 public class OffsetTimeXmlAdapterTest extends AbstractToStringAdapterTest<OffsetTime, OffsetTimeXmlAdapter> {
     public OffsetTimeXmlAdapterTest() {

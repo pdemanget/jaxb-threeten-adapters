@@ -1,6 +1,6 @@
 package com.migesok.jaxb.adapter.javatime;
 
-import java.time.Period;
+import org.threeten.bp.Period;
 
 public class PeriodXmlAdapterTest extends AbstractToStringAdapterTest<Period, PeriodXmlAdapter> {
     public PeriodXmlAdapterTest() {

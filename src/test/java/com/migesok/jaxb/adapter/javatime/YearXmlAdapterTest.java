@@ -1,13 +1,13 @@
 package com.migesok.jaxb.adapter.javatime;
 
-import java.time.DateTimeException;
-import java.time.Year;
-import org.junit.Before;
-import org.junit.Test;
-
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertThat;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.threeten.bp.DateTimeException;
+import org.threeten.bp.Year;
 
 public class YearXmlAdapterTest {
     private YearXmlAdapter adapter;

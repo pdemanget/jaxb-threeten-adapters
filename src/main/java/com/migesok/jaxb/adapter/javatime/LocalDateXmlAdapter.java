@@ -1,7 +1,7 @@
 package com.migesok.jaxb.adapter.javatime;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
+import org.threeten.bp.LocalDate;
+import org.threeten.bp.format.DateTimeFormatter;
 
 /**
  * {@code XmlAdapter} mapping JSR-310 {@code LocalDate} to ISO-8601 string
@@ -14,6 +14,6 @@ import java.time.format.DateTimeFormatter;
  */
 public class LocalDateXmlAdapter extends TemporalAccessorXmlAdapter<LocalDate> {
     public LocalDateXmlAdapter() {
-        super(DateTimeFormatter.ISO_DATE, LocalDate::from);
+        super(DateTimeFormatter.ISO_DATE, LocalDate.FROM);
     }
 }

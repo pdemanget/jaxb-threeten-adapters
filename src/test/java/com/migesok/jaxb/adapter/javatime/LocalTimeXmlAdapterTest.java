@@ -1,6 +1,6 @@
 package com.migesok.jaxb.adapter.javatime;
 
-import java.time.LocalTime;
+import org.threeten.bp.LocalTime;
 
 public class LocalTimeXmlAdapterTest extends AbstractToStringAdapterTest<LocalTime, LocalTimeXmlAdapter> {
     public LocalTimeXmlAdapterTest() {

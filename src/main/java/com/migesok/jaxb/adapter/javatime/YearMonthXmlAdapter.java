@@ -1,7 +1,8 @@
 package com.migesok.jaxb.adapter.javatime;
 
-import java.time.YearMonth;
 import javax.xml.bind.annotation.adapters.XmlAdapter;
+
+import org.threeten.bp.YearMonth;
 
 /**
  * {@code XmlAdapter} mapping JSR-310 {@code YearMonth} to a string such as 2007-12

@@ -1,15 +1,17 @@
 package com.migesok.jaxb.adapter.javatime;
 
-import java.lang.reflect.InvocationTargetException;
-import javax.annotation.Nonnull;
-import javax.xml.bind.annotation.adapters.XmlAdapter;
-import org.junit.Before;
-import org.junit.Test;
-
 import static java.util.Objects.requireNonNull;
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertThat;
+
+import java.lang.reflect.InvocationTargetException;
+
+import javax.annotation.Nonnull;
+import javax.xml.bind.annotation.adapters.XmlAdapter;
+
+import org.junit.Before;
+import org.junit.Test;
 
 public abstract class AbstractToStringAdapterTest<T, A extends XmlAdapter<String, T>> {
 

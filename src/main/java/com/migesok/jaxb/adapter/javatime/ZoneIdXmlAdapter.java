@@ -1,7 +1,8 @@
 package com.migesok.jaxb.adapter.javatime;
 
-import java.time.ZoneId;
 import javax.xml.bind.annotation.adapters.XmlAdapter;
+
+import org.threeten.bp.ZoneId;
 
 /**
  * {@code XmlAdapter} mapping JSR-310 {@code ZoneId} and {@code ZoneOffset} to the time-zone ID string

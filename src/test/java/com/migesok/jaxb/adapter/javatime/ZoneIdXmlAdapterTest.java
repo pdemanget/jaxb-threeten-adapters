@@ -1,7 +1,7 @@
 package com.migesok.jaxb.adapter.javatime;
 
 
-import java.time.ZoneId;
+import org.threeten.bp.ZoneId;
 
 public class ZoneIdXmlAdapterTest extends AbstractToStringAdapterTest<ZoneId, ZoneIdXmlAdapter> {
     public ZoneIdXmlAdapterTest() {

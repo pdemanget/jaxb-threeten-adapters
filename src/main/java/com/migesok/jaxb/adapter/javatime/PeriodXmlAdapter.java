@@ -1,7 +1,8 @@
 package com.migesok.jaxb.adapter.javatime;
 
-import java.time.Period;
 import javax.xml.bind.annotation.adapters.XmlAdapter;
+
+import org.threeten.bp.Period;
 
 /**
  * {@code XmlAdapter} mapping JSR-310 {@code Period} to ISO-8601 string

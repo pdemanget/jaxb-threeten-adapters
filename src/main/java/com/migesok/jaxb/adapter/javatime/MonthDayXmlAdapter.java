@@ -1,7 +1,8 @@
 package com.migesok.jaxb.adapter.javatime;
 
-import java.time.MonthDay;
 import javax.xml.bind.annotation.adapters.XmlAdapter;
+
+import org.threeten.bp.MonthDay;
 
 /**
  * {@code XmlAdapter} mapping JSR-310 {@code MonthDay} to a string such as --12-03

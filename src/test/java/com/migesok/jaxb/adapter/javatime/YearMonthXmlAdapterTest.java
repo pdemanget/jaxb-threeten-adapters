@@ -1,6 +1,6 @@
 package com.migesok.jaxb.adapter.javatime;
 
-import java.time.YearMonth;
+import org.threeten.bp.YearMonth;
 
 public class YearMonthXmlAdapterTest extends AbstractToStringAdapterTest<YearMonth, YearMonthXmlAdapter> {
     public YearMonthXmlAdapterTest() {

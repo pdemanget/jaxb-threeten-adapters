@@ -1,7 +1,9 @@
 package com.migesok.jaxb.adapter.javatime;
 
 import javax.xml.bind.annotation.adapters.XmlAdapter;
-import java.time.Duration;
+
+import org.threeten.bp.Duration;
+
 
 /**
  * {@code XmlAdapter} mapping JSR-310 {@code Duration} to ISO-8601 string
@@ -17,12 +19,12 @@ import java.time.Duration;
  */
 public class DurationXmlAdapter extends XmlAdapter<String, Duration> {
     @Override
-    public Duration unmarshal(String stringValue) {
+    public Duration unmarshal(final String stringValue) {
         return stringValue != null ? Duration.parse(stringValue) : null;
     }
 
     @Override
-    public String marshal(Duration value) {
+    public String marshal(final Duration value) {
         return value != null ? value.toString() : null;
     }
 }

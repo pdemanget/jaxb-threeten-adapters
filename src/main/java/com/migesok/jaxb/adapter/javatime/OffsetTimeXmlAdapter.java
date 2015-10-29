@@ -1,7 +1,7 @@
 package com.migesok.jaxb.adapter.javatime;
 
-import java.time.OffsetTime;
-import java.time.format.DateTimeFormatter;
+import org.threeten.bp.OffsetTime;
+import org.threeten.bp.format.DateTimeFormatter;
 
 /**
  * {@code XmlAdapter} mapping JSR-310 {@code OffsetTime} to ISO-8601 string
@@ -13,6 +13,6 @@ import java.time.format.DateTimeFormatter;
  */
 public class OffsetTimeXmlAdapter extends TemporalAccessorXmlAdapter<OffsetTime> {
     public OffsetTimeXmlAdapter() {
-        super(DateTimeFormatter.ISO_OFFSET_TIME, OffsetTime::from);
+        super(DateTimeFormatter.ISO_OFFSET_TIME, OffsetTime.FROM);
     }
 }

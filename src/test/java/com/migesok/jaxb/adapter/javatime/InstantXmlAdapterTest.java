@@ -1,6 +1,6 @@
 package com.migesok.jaxb.adapter.javatime;
 
-import java.time.Instant;
+import org.threeten.bp.Instant;
 
 public class InstantXmlAdapterTest extends AbstractToStringAdapterTest<Instant, InstantXmlAdapter> {
     public InstantXmlAdapterTest() {

@@ -1,6 +1,6 @@
 package com.migesok.jaxb.adapter.javatime;
 
-import java.time.Duration;
+import org.threeten.bp.Duration;
 
 public class DurationXmlAdapterTest extends AbstractToStringAdapterTest<Duration, DurationXmlAdapter> {
     public DurationXmlAdapterTest() {

@@ -1,7 +1,7 @@
 package com.migesok.jaxb.adapter.javatime;
 
-import java.time.Instant;
-import java.time.format.DateTimeFormatter;
+import org.threeten.bp.Instant;
+import org.threeten.bp.format.DateTimeFormatter;
 
 /**
  * {@code XmlAdapter} mapping JSR-310 {@code Instant} to ISO-8601 string
@@ -13,6 +13,6 @@ import java.time.format.DateTimeFormatter;
  */
 public class InstantXmlAdapter extends TemporalAccessorXmlAdapter<Instant> {
     public InstantXmlAdapter() {
-        super(DateTimeFormatter.ISO_INSTANT, Instant::from);
+        super (DateTimeFormatter.ISO_INSTANT, Instant.FROM);
     }
 }
